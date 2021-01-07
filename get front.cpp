@@ -38,7 +38,7 @@ void get_front(){
 		
 }
 
- display() {
+void display() {
    struct Node* ptr;
    ptr = head;
    while (ptr != NULL) {
