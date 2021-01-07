@@ -20,7 +20,19 @@ void search(int key){
 		index++;
 		temp = temp->next;
 	}
-	cout<<"Entered key element is at place/address "<<index<<endl;
+	struct Node* current;
+	current = head;
+	int count = 0;
+	while(current != NULL){
+		count++;
+		current = current -> next;
+	} 
+	if(index > count){
+		cout<<"NULL / <Not Found>"<<endl;
+	}
+	else{
+		cout<<"Entered key element is at address = "<<index<<endl;
+	}
 }
 void display() {
    	if(head == NULL){
