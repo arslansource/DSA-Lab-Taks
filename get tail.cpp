@@ -50,7 +50,7 @@ void get_tail()
 	
 }
 
- display() {
+void display() {
    struct Node* ptr;
    ptr = head;
    while (ptr != NULL) {
