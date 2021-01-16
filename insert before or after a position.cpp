@@ -41,7 +41,6 @@ void insert_before(int value){		//insert before position
 		cout<<"Enter value:"<<endl;
 		cin>>value;
 		new_node -> data = value;
-		
 		new_node -> next = temp->next;
 		temp->next = new_node;
 	}
