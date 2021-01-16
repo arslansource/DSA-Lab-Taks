@@ -13,26 +13,21 @@ void insert(int new_data) {
    head = new_node;
 }
 void search(int key){
-	int index = 1;
+	int index = 0;
 	struct Node* temp;
 	temp = head;
 	while(temp != NULL && temp -> data != key){
 		index++;
 		temp = temp->next;
 	}
-	struct Node* current;
-	current = head;
-	int count = 0;
-	while(current != NULL){
-		count++;
-		current = current -> next;
-	} 
-	if(index > count){
-		cout<<"NULL / <Not Found>"<<endl;
+	if(index == 0){
+		cout<<"Not Found/ NULL"<<endl;
 	}
 	else{
 		cout<<"Entered key element is at address = "<<index<<endl;
 	}
+	
+		
 }
 void display() {
    	if(head == NULL){
