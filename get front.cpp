@@ -14,72 +14,17 @@ void insert(int value){			//default method (at front)
 	head = new_node;
 }
 void get_front(){
-	bool isempty;
-	struct Node* current;
-	current = head;
-	int count = 0;
-	while(current != NULL){
-		count++;
-		current = current -> next;
-	}
-	if(count > 0){
-		isempty = false;
-	}
-	else if(count == 0){
-		isempty = true;
-	} 
-	
-	if(isempty == true){
+	if(head == NULL){
 		cout<<"Linked List is empty"<<endl;
 	}
 	else{
 		cout<<"Front is "<<head -> data<<endl;
-	}
-		
+	}	
 }
 
-void display() {
-   struct Node* ptr;
-   ptr = head;
-   while (ptr != NULL) {
-      cout<< ptr->data <<" ";
-      ptr = ptr->next;
-   }
-   cout<<endl;
-}
 int main(){
-	int a,b,c,ch;
-	bool isempty;
-	cout<<"Simple Linked List"<<endl;
-	cout<<"1 for inserting a node by default method(at front)"<<endl;
-	cout<<"2 for displaying linked list."<<endl;
-	cout<<"3 to get front"<<endl;
-	cout<<"4 to exit."<<endl;
-	do{
-		cout<<"*****	Enter Choice	*****"<<endl;
-		cin>>ch;
-		switch(ch){
-			case 1:{
-				insert(a);
-				break;
-			}
-			case 2:{
-				display();
-				break;
-			}
-			case 3:{
-				get_front();
-				break;
-			}
-			case 4:{
-				cout<<"Exitting..."<<endl;
-				break;
-			}
-			default:{
-				cout<<"Invalid command, try again"<<endl;
-				break;
-			}
-		}
-	}while(ch != 4);
+	get_front();
+	insert(12);
+	get_front();
 	return 0;
 }
