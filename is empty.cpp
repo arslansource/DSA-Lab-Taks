@@ -20,7 +20,6 @@ void is_empty(){
 		cout<<"LL is Not empty"<<endl;
 	}
 }
-
 int main(){
 	is_empty();
 	insert(12);
