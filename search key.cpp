@@ -44,39 +44,10 @@ void display() {
    	}
 }
 int main(){
-	int value,key,ch;
-	cout<<"1 to insert"<<endl;
-	cout<<"2 to display"<<endl;
-	cout<<"3 to search key element in list"<<endl;
-	cout<<"4 to exit"<<endl;
-	do{
-		cout<<"***** Enter Choice *****"<<endl;
-		cin>>ch;
-		switch(ch){
-			case 1:{
-				cout<<"Enter value to insert"<<endl;
-				cin>>value;
-				insert(value);
-				break;
-			}
-			case 2:{
-				display();
-				break;
-			}
-			case 3:{
-				cout<<"Enter key element to search"<<endl;
-				cin>>key;
-				search(key);
-				break;
-			}
-			case 4:{
-				cout<<"Exitting.."<<endl;
-				break;
-			}
-			default:{
-				cout<<"Invalid command, try again"<<endl;
-				break;
-			}
-		}
-	}while(ch != 4);
+	insert(12);
+	insert(43);
+	insert(2);
+	display();
+	search(43);
+	return 0;
 }
