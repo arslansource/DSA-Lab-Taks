@@ -18,16 +18,13 @@ void search(int key){
 	temp = head;
 	while(temp != NULL && temp -> data != key){
 		index++;
-		temp = temp->next;
-	}
+		temp = temp->next;}
 	if(index == 0){
 		cout<<"Not Found/ NULL"<<endl;
 	}
 	else{
 		cout<<"Entered key element is at address = "<<index<<endl;
-	}
-	
-		
+	}	
 }
 void display() {
    	if(head == NULL){
