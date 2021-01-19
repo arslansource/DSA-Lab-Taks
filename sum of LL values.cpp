@@ -1,5 +1,3 @@
-// C++ program to add two numbers
-// represented by linked list
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -106,7 +104,6 @@ void printList(Node* node)
 	cout << endl;
 }
 
-/* Driver code */
 int main(void)
 {
 	Node* res = NULL;
@@ -135,4 +132,3 @@ int main(void)
 
 	return 0;
 }
-
