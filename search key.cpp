@@ -19,7 +19,7 @@ void search(int key){
 	while(temp != NULL && temp -> data != key){
 		index++;
 		temp = temp->next;}
-	if(index == 0){
+	if(temp->data != NULL){
 		cout<<"Not Found/ NULL"<<endl;
 	}
 	else{
