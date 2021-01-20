@@ -5,7 +5,8 @@ struct Node{
 	struct Node *next;
 };
 struct Node* head = NULL;
-void insert_front(int value){
+void insert_front(){
+	int value;
 	struct Node* new_node = (struct Node*) malloc(sizeof(struct Node));
 	cout<<"Enter value:"<<endl;
 	cin>>value;
@@ -23,7 +24,7 @@ void display() {
    cout<<endl;
 }
 int main(){
-	int a,ch;
+	int ch;
 	bool isempty;
 	cout<<"Simple Linked List"<<endl;
 	cout<<"1 for inserting a node at front"<<endl;
@@ -34,7 +35,7 @@ int main(){
 		cin>>ch;
 		switch(ch){
 			case 1:{
-				insert_front(a);
+				insert_front();
 				break;
 			}
 			case 2:{
